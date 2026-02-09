@@ -15,6 +15,7 @@ sequenceDiagram
 
     browser->>server:  GET https://studies.cs/helsinki.fi/exampleapp/main.js
     server-->>browser:  MAIN JS FILE
+    Note over browser: the js file is run and executes the another GET request to data.json
 
     browser->>server:  GET https://studies.cs/helsinki.fi/exampleapp/data.json
     server-->>browser:  the updated data.json list where new_note is added
